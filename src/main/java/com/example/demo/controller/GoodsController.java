@@ -35,6 +35,7 @@ public class GoodsController {
 		ListOperations<String, Object> opsForList = redisTemplate.opsForList();
 		Long leftPush = opsForList.leftPush("goodslist", goods);
 		System.err.println(leftPush);
+		
 		return "redirect:list";
 	}
 }
