@@ -51,6 +51,7 @@ public class GoodsController {
 			}
 			Set<Object> range2 = boundZSetOps.range(0, -1);
 			model.addAttribute("goodsList", range2);
+			
 		}
 		
 		model.addAttribute("pages", pageMap.get("pages"));
