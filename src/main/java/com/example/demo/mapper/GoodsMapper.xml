@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 在mybatis中命名空间是对应接口的全限定类名 -->
+<mapper namespace="com.example.demo.mapper.Goodsmapper">
+	<select id="getgoodsList" resultType="goods">
+		select * from goods
+	</select>
+</mapper>
